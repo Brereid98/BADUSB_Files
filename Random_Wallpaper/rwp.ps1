@@ -64,7 +64,7 @@ public class Params
     $ret = [Params]::SystemParametersInfo($SPI_SETDESKWALLPAPER, 0, $Image, $fWinIni)
 }
 
-Set-WallPaper -Image "$env:TMP\i.png" -Style Fill
+Set-WallPaper -Image "$env:TMP\i.jpg" -Style Fill
 
 rm $env:TEMP\* -r -Force -ErrorAction SilentlyContinue
 
