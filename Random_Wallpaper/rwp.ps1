@@ -1,4 +1,4 @@
-$RI = Get-Random @(1..5)
+$RI = Get-Random @(1..6)
 
 $image =  "https://github.com/Brereid98/BADUSB_Files/Random_Wallpaper/$RI.jpg"
 
