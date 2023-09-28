@@ -1,6 +1,6 @@
 $RI = Get-Random @(1..6)
 
-$image =  "https://github.com/Brereid98/BADUSB_Files/Random_Wallpaper/$RI.jpg"
+$image =  "https://github.com/Brereid98/BADUSB_Files/tree/main/Random_Wallpaper/$RI.jpg"
 
 $i = -join($image,"?dl=1")
 
